@@ -28,3 +28,27 @@ Lemmatization helps by:
 - Improving consistency.
 - Making it easier to group related terms.
 - Enhancing performance in text classification, topic modeling, and search systems.
+
+## 6. How does Lemmatization handle different parts of speech (POS)?
+- Lemmatization requires the POS tag to identify whether a word is a noun, verb, adjective, etc.
+This ensures the correct lemma is returned.
+- **Example:**
+  - Noun: "better" → "good"
+  - Verb: "better" → "better"
+
+## 7. How would you implement Lemmatization in Python using NLTK or spaCy?
+- **Using NLTK:**
+```python
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import wordnet
+
+lemmatizer = WordNetLemmatizer()
+print(lemmatizer.lemmatize("running", pos="v"))  # Output: run
+```
+- **Using spaCy:**
+```python
+import spacy
+nlp = spacy.load("en_core_web_sm")
+doc = nlp("running")
+print([token.lemma_ for token in doc])  # Output: ['run']
+```
