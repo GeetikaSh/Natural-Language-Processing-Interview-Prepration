@@ -52,3 +52,6 @@ nlp = spacy.load("en_core_web_sm")
 doc = nlp("running")
 print([token.lemma_ for token in doc])  # Output: ['run']
 ```
+
+## 8. Can Lemmatization be used in sentiment analysis? Why or why not?
+Yes, it can be used to normalize text and reduce variations, helping in consistent feature extraction. However, excessive lemmatization may lose nuances (e.g., "happy" v/s. "happier"), whicg are critical for sentiment analaysis.
