@@ -55,3 +55,20 @@ print([token.lemma_ for token in doc])  # Output: ['run']
 
 ## 8. Can Lemmatization be used in sentiment analysis? Why or why not?
 Yes, it can be used to normalize text and reduce variations, helping in consistent feature extraction. However, excessive lemmatization may lose nuances (e.g., "happy" v/s. "happier"), whicg are critical for sentiment analaysis.
+
+## 9. What challenges might arise when applying Lemmatization to multi-lingual datasets?
+- Lack of comprehensive morphological dictionarries for all languages.
+- Variations in grammer rules and structures.
+- Handling code-mixed (examaple, Hinglish) or transliterated text.
+
+## 10. How does Lemmatization impact computational efficiency compared to Stemming?
+Lemmatizaarion is computationally expensive as it requires morphological analysis of POS Tagging, whereas stemming is faster but less accurate.
+`Morphological analysis is a method for exploring solutions to complex problems, and can be used in a variety of fields including linguistics, biology, and general problem solving`
+
+## 11. What are the limitations of Lemmatization in handling domain-specific language?
+Lemmatizers rely on general purpose dictionaries and may fail with domain specific terms or jargon. Custoizing lemmatizers with domain specific lexicons can address this limitation.
+
+## 12. Explain how a lemmatizer words under the hood?
+- Analzes the word structure and identifies the lemma using a morpgological dictionary.
+- Leverages POS tagging to choose the appropriate base form.
+- Example: For "better", it identifies POS as an adjective and maps it to "good".
