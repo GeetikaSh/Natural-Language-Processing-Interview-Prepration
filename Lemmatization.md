@@ -72,3 +72,16 @@ Lemmatizers rely on general purpose dictionaries and may fail with domain specif
 - Analzes the word structure and identifies the lemma using a morpgological dictionary.
 - Leverages POS tagging to choose the appropriate base form.
 - Example: For "better", it identifies POS as an adjective and maps it to "good".
+
+## 13. How does Lemmatization affect downstream NLP tasks like topic modeling?
+Lemmatization helps reduce word variants, ensuring cleaner and more consistent input for topic modelling algorithms, leading to better topic coherence.
+
+## 14. What is teh impac of Lemmatization on word embedding( example, Word2Vec)?
+Lemmatization reduces redundancy in vocabulary, allowing embeddings to focus on sementically signinficant terms. However, it may oversiplify embeddings by removing morphological neuances.
+
+## 15. How would you evaluate the effectiveness of a lemmatization process in an NLP pipeline?
+- Compare results with and without Lemmatization in downstream tasks (e.g., classiication accuracy, topic coherence)
+- Qualitative inspection of processed text to consistency and relevance.
+
+## 16. Would you use Lemmatization or Stemming for a legal document search engine?
+**Lemmatization**, as it ensures context-aware normalization, preserving the legal meaning and validity of terms.
