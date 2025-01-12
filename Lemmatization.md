@@ -85,3 +85,23 @@ Lemmatization reduces redundancy in vocabulary, allowing embeddings to focus on 
 
 ## 16. Would you use Lemmatization or Stemming for a legal document search engine?
 **Lemmatization**, as it ensures context-aware normalization, preserving the legal meaning and validity of terms.
+
+## 17. How would you preprocess tweets using Lemmatization?
+- Normalize hastags (#hAPPY --> happy)
+- Handle slang or abbriviations (e.g., "gonna" --> "going to"
+- Use lemmatization to reduce word variations.
+
+## 18. Why might performance decrease ater Lemmatization in text classification?
+Excessive kemmatization may remove meaningful morphological features, reducing the richness of the text.
+
+## 19. How to design a custom lemmatizer for a domain (e.g., medical text)?
+- Build a domain-specific morphological dictionary.
+- Integrate domain- aware POS tagging rules.
+- Test o domain - relevant corpora.
+- 
+`Corpora is a collection of texts or text samples that are used to study a language. The word "corpora" is the plural of "corpus".
+part-of-speech tagging (POS tagging or PoS tagging or POST), also called grammatical tagging is the process of marking up a word in a text (corpus) as corresponding to a particular part of speech, based on both its definition and its context.`
+
+## 20. How to use Lemmatization with NER?
+Apply Lemmatization only to non-entity tokens to avoid losing entity-specific nuances critical for accurate recognition.
+
